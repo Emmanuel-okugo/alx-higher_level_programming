@@ -1,3 +1,6 @@
 #!/usr/bin/python3
-number = 98
-print(f"{number + 0:d} Battery street")
+try:
+    number = '98'
+    print(f"{number} Battery street")
+except ValueError:
+    raise ValueError("Unknown format code 'd' for object of type 'str'")
